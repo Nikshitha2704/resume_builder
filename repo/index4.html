@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Resume Builder</h1>
+        <div class="personal-info">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Your Phone">
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Your Address"></textarea>
+            <label for="profile-img">Profile Image:</label>
+            <input type="text" id="profile-img" placeholder="Image URL">
+        </div>
+        <div class="professional-info">
+            <h2>Professional Information</h2>
+            <label for="objective">Objective:</label>
+            <textarea id="objective" placeholder="Your Objective"></textarea>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Your Experience"></textarea>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Your Education"></textarea>
+        </div>
+        <button id="generate-btn">Generate Resume</button>
+        <div class="profile-preview">
+            <h2>Profile Preview</h2>
+            <img id="preview-img" src="C:\Users\niksh\Downloads\avatar-3814049_640.png" alt="Profile Image" class="img-fluid">
+            <div class="preview-details">
+                <h3 id="preview-name">clara yun</h3>
+                <p id="preview-email">clara@gmail.com</p>
+                <p id="preview-phone">123-456-7890</p>
+                <p id="preview-address">123 Main Street, munar, India</p>
+                <h4>Objective:</h4>
+                <p id="preview-objective">A dedicated and motivated individual seeking a challenging position in the field of technology.
+                    During my tenure at ABC Tech Solutions, I served as a Software Engineer, contributing to the company's success through
+                     developing and maintaining web applications using Python, Django, and React.js. With a keen focus on collaborating with
+                      cross-functional teams to design and implement new features, 
+                    I consistently met and exceeded expectations in a dynamic and collaborative work environment
+                </p>
+                <h4>Experience:</h4>
+                <p id="preview-experience">Over 5 years of experience in software development, specializing in web development
+                    From leading the implementation of a new user authentication system, where I streamlined the login process 
+                    and improved security measures, to mentoring junior developers, where I provided guidance on best practices
+                     and coding standards, my experience has honed my ability to communicate effectively and adapt to evolving 
+                     project requirements. I am eager to bring this expertise to a new opportunity where I can continue to drive
+                      innovation and deliver high-quality solutions..</p>
+                <h4>Education:</h4>
+                <p id="preview-education">Bachelor's Degree in Computer Science from woxen University</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add the following script tag to include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <!-- Add the following script tag to include html2canvas library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="script4.js"></script>
+</body>
+</html>
